@@ -1,0 +1,5 @@
+﻿# Large dataset archive
+/data.zip
+
+# Nested project repository (managed separately)
+/deeppcb/
