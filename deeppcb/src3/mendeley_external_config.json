@@ -1,0 +1,22 @@
+﻿{
+    "image_dir":  "../out_data/PCB-Defect An Annotated Dataset for Surface Defect/PCB-Defect/PCB-Defect-Reannotated/PCB-Defect-Reannotated/train/images",
+    "annotations":  "../out_data/PCB-Defect An Annotated Dataset for Surface Defect/PCB-Defect/PCB-Defect-Reannotated/PCB-Defect-Reannotated/train/labels",
+    "annotation_format":  "obb",
+    "obb_classes":  {
+                        "0":  "missing_pad",
+                        "1":  "mouse_bite",
+                        "2":  "open_circuit",
+                        "3":  "short",
+                        "4":  "spur",
+                        "5":  "spurious_copper"
+                    },
+    "checkpoint":  "artifacts/runs/C/best.pt",
+    "threshold":  null,
+    "threshold_source":  null,
+    "output_dir":  "artifacts/external/mendeley_v2/C",
+    "device":  "auto",
+    "batch_size":  null,
+    "checkpoint_metadata_overrides":  {
+
+                                      }
+}

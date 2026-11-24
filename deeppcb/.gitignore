@@ -10,3 +10,15 @@ __pycache__/
 
 # Jupyter transient files
 .ipynb_checkpoints/
+
+# Vite frontend dependencies and build output
+/frontend/node_modules/
+/frontend/dist/
+
+# Generated experiment artifacts and model checkpoints
+/src2/artifacts/
+/src3/artifacts/
+/src3/artifacts_visa/
+*.pt
+*.pth
+*.onnx

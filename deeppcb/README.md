@@ -18,7 +18,7 @@ deeppcb/
   requirements.txt
 ```
 
-데이터 ZIP에 최상위 `data/` 폴더가 들어 있으므로, `deeppcb/`에서 압축을 풀면 됩니다. 공식 목록의 첫 필드는 접미사 없는 기본 JPG 경로이고, 두 번째 필드는 다른 폴더에 있는 라벨 TXT 경로입니다. 01은 각각 `_temp.jpg`, `_test.jpg`, `.txt`를 연결합니다. 이 프로젝트는 첨부된 실제 구조(`data/trainval.txt`, `data/test.txt`, `group*/<id>/*_temp.jpg`, `*_test.jpg`, `group*/<id>_not/*.txt`)에 맞춰 작성됐습니다. 불필요한 추가 JPG는 공식 목록에 없으면 무시합니다.
+데이터 ZIP에 최상위 `data1` 폴더가 들어 있으므로, `deeppcb/`에서 압축을 풀면 됩니다. 공식 목록의 첫 필드는 접미사 없는 기본 JPG 경로이고, 두 번째 필드는 다른 폴더에 있는 라벨 TXT 경로입니다. 01은 각각 `_temp.jpg`, `_test.jpg`, `.txt`를 연결합니다. 이 프로젝트는 첨부된 실제 구조(`data1`, `data1`, `group*/<id>/*_temp.jpg`, `*_test.jpg`, `group*/<id>_not/*.txt`)에 맞춰 작성됐습니다. 불필요한 추가 JPG는 공식 목록에 없으면 무시합니다.
 
 프로젝트 루트에서 다음을 실행합니다. Windows 명령 프롬프트 기준입니다.
 

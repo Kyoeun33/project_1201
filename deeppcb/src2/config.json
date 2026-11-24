@@ -1,0 +1,38 @@
+{
+  "paths": {
+    "DeepPCB": "../data",
+    "PKU": "../out_data/PCB_DATASET",
+    "VisA": "../out_data"
+  },
+  "sources": ["DeepPCB", "PKU", "VisA"],
+  "output_dir": "artifacts",
+  "seed": 42,
+  "split_fractions": [0.7, 0.15, 0.15],
+  "tiling": {
+    "size": 640,
+    "overlap": 128,
+    "min_defect_coverage": 0.5
+  },
+  "training": {
+    "model": "resnet18",
+    "pretrained": true,
+    "image_size": 224,
+    "batch_size": 48,
+    "epochs": 3,
+    "learning_rate": 0.0002,
+    "optimizer": "adamw",
+    "weight_decay": 0.0001,
+    "augment": true,
+    "preprocessing": "rgb",
+    "binary_cutoff": 128,
+    "imbalance": "class_weight",
+    "device": "auto",
+    "workers": 0,
+    "cache_inputs": true,
+    "amp": true
+  },
+  "threshold": {
+    "min_recall": 0.9,
+    "max_fpr": 0.05
+  }
+}
