@@ -1,0 +1,21 @@
+data_root: data
+split_csv: runs/splits.csv
+runs_dir: runs
+seed: 42
+device: auto  # auto | cpu | cuda
+candidate:
+  binary_threshold: 128
+  min_area: 16
+  output_margin: 8
+  context_margin: 12
+  copper_polarity: dark  # dark | light
+model:
+  patch_size: 96
+  nms_iou: 0.50
+training:
+  epochs: 30
+  early_stopping_patience: 7
+  batch_images: 2
+  learning_rate: 0.001
+  max_background_per_image: 24
+  augmentation: false

@@ -1,5 +1,11 @@
-﻿# Large dataset archive
+﻿# Large dataset archive and generated artifacts
 /data.zip
+/deeppcb/data/
+/deeppcb/out_data/
+/deeppcb/runs/
+/deeppcb/*.zip
+/deeppcb/*.pt
+/deeppcb/*.pth
 
-# Nested project repository (managed separately)
-/deeppcb/
+# Preserve the former nested repository metadata outside the uploaded source
+/.deeppcb-git-backup/
