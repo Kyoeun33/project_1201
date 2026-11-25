@@ -1,0 +1,59 @@
+{
+  "config": {
+    "paths": {
+      "VisA": "C:\\Users\\Win11Pro\\Documents\\18_kdt_팀프로젝트_5차~1123\\data_example\\DeepPCB\\deeppcb\\out_data"
+    },
+    "sources": [
+      "VisA"
+    ],
+    "output_dir": "C:\\Users\\Win11Pro\\Documents\\18_kdt_팀프로젝트_5차~1123\\data_example\\DeepPCB\\deeppcb\\src3\\artifacts_visa_kfold",
+    "resnet_output_dir": "C:\\Users\\Win11Pro\\Documents\\18_kdt_팀프로젝트_5차~1123\\data_example\\DeepPCB\\deeppcb\\src2\\artifacts",
+    "seed": 42,
+    "split_fractions": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "tiling": {
+      "size": 640,
+      "overlap": 128,
+      "min_defect_coverage": 0.5
+    },
+    "training": {
+      "model": "efficientnet_b0",
+      "pretrained": true,
+      "image_size": 224,
+      "batch_size": 48,
+      "epochs": 25,
+      "learning_rate": 0.0002,
+      "optimizer": "adamw",
+      "weight_decay": 0.0001,
+      "augment": false,
+      "preprocessing": "rgb",
+      "binary_cutoff": 128,
+      "imbalance": "class_weight",
+      "device": "auto",
+      "workers": 0,
+      "cache_inputs": true,
+      "amp": true,
+      "early_stopping_patience": 7
+    },
+    "threshold": {
+      "min_recall": 0.9,
+      "max_fpr": 0.05
+    }
+  },
+  "manifest_sha256": {
+    "originals.csv": "3984015035edb378e7f6b92deeaed673616ba8845aac58d24f550d5bc338a562",
+    "tiles.csv": "96216bec6c6c3a0097e200c16bf865cf9718517ac574f6460418db512c00d62e"
+  },
+  "folds": 5,
+  "conditions": [
+    "baseline",
+    "patch_oversample"
+  ],
+  "calibration_fraction": 0.15,
+  "patch_overlap": 384,
+  "defect_sample_weight": 2.0,
+  "excluded_test_originals": 662
+}

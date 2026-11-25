@@ -1,0 +1,93 @@
+{
+  "settings": {
+    "sources": [
+      "VisA"
+    ],
+    "seed": 42,
+    "split_fractions": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "tiling": {
+      "size": 640,
+      "overlap": 128,
+      "min_defect_coverage": 0.5
+    }
+  },
+  "paths": {
+    "VisA": "C:\\Users\\Win11Pro\\Documents\\18_kdt_팀프로젝트_5차~1123\\data_example\\DeepPCB\\deeppcb\\out_data"
+  },
+  "counts": [
+    {
+      "source": "VisA",
+      "split": "train",
+      "groups": 3091,
+      "originals": 3091,
+      "original_normal": 2811,
+      "original_defect": 280,
+      "all_tiles": 18546,
+      "tile_normal": 17616,
+      "tile_defect": 828,
+      "tile_excluded": 102,
+      "kept_tiles": 18444,
+      "originals_with_kept_tiles": 3091,
+      "defect_originals_without_positive_tile": 0
+    },
+    {
+      "source": "VisA",
+      "split": "validation",
+      "groups": 663,
+      "originals": 663,
+      "original_normal": 603,
+      "original_defect": 60,
+      "all_tiles": 3978,
+      "tile_normal": 3772,
+      "tile_defect": 179,
+      "tile_excluded": 27,
+      "kept_tiles": 3951,
+      "originals_with_kept_tiles": 663,
+      "defect_originals_without_positive_tile": 0
+    },
+    {
+      "source": "VisA",
+      "split": "test",
+      "groups": 662,
+      "originals": 662,
+      "original_normal": 602,
+      "original_defect": 60,
+      "all_tiles": 3972,
+      "tile_normal": 3768,
+      "tile_defect": 178,
+      "tile_excluded": 26,
+      "kept_tiles": 3946,
+      "originals_with_kept_tiles": 662,
+      "defect_originals_without_positive_tile": 0
+    }
+  ],
+  "leakage": {
+    "passed": true,
+    "violations": {
+      "image_id_in_multiple_splits": 0,
+      "group_id_in_multiple_splits": 0,
+      "sha256_in_multiple_splits": 0,
+      "same_bytes_conflicting_labels": 0,
+      "duplicate_original_id": 0,
+      "duplicate_tile_id": 0,
+      "repeated_tile_in_original": 0,
+      "tile_parent_split_mismatch": 0,
+      "originals_without_tiles": 0
+    },
+    "repeated_image_files_within_split": 0,
+    "augmentation": "on-the-fly, training loader only"
+  },
+  "omitted": {},
+  "group_counts": {
+    "VisA": 4416
+  },
+  "groups_missing_split": [],
+  "manifest_sha256": {
+    "originals.csv": "3984015035edb378e7f6b92deeaed673616ba8845aac58d24f550d5bc338a562",
+    "tiles.csv": "96216bec6c6c3a0097e200c16bf865cf9718517ac574f6460418db512c00d62e"
+  }
+}

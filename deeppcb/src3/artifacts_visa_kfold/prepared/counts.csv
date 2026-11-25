@@ -1,0 +1,4 @@
+source,split,groups,originals,original_normal,original_defect,all_tiles,tile_normal,tile_defect,tile_excluded,kept_tiles,originals_with_kept_tiles,defect_originals_without_positive_tile
+VisA,train,3091,3091,2811,280,18546,17616,828,102,18444,3091,0
+VisA,validation,663,663,603,60,3978,3772,179,27,3951,663,0
+VisA,test,662,662,602,60,3972,3768,178,26,3946,662,0

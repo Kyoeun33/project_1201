@@ -1,0 +1,4 @@
+source,example,image_id,tile_id,overlap_px,region_px,overlap_fraction
+VisA,normal,VisA/pcb1/Data/Images/Normal/0000.JPG,600,0,0,0.0
+VisA,defect,VisA/pcb1/Data/Images/Anomaly/000.JPG,3,1524,1524,1.0
+VisA,excluded,VisA/pcb1/Data/Images/Anomaly/009.JPG,57,387,4769,0.08114908785908996

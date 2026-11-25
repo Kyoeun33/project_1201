@@ -1,0 +1,13 @@
+{
+  "protocol_id": "981a9e4a0101a7fd0ab9108a605ba5b109d9f7c5765f7fc5963b6385d2cf1d53",
+  "test_ids_sha256": "3043e7482a1642366dc6c0ff0e5418c1bff53964b730bccd62cabec04242f1d0",
+  "weights_sha256": "89426d2d21482c568ae84c901a49a72cd7258c3c3d3b3315af55821843cb9d4a",
+  "originals": 662,
+  "all_tiles": 3972,
+  "operating_threshold": 0.020964236930012703,
+  "threshold_source": "validation",
+  "files": {
+    "predictions.csv": "2e2b961e98af54c3b672ba45bb4485aab06ac6253a3efaf9a12fe08d6c831add",
+    "metrics.csv": "686c54a6ab129ddd66eef25249c8569e96eabd5dc06224a37c5ac48900f9cfa6"
+  }
+}

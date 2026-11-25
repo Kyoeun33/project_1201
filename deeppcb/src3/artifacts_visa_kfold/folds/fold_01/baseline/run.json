@@ -1,0 +1,19 @@
+{
+  "fold": 1,
+  "condition": "baseline",
+  "seed": 43,
+  "best_epoch": 9,
+  "epochs_run": 16,
+  "best_validation_image_log_loss": 0.054296286605098894,
+  "train_originals": 2554,
+  "calibration_originals": 449,
+  "evaluation_originals": 751,
+  "train_normal_tiles": 14549,
+  "train_defect_tiles": 684,
+  "extra_defect_patches": 0,
+  "draws_per_epoch": 15233,
+  "threshold": 0.015007443726062775,
+  "calibration_targets_met": true,
+  "calibration_recall": 0.975,
+  "calibration_fpr": 0.0488997555012225
+}

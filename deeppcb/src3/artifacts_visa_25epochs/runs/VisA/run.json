@@ -1,0 +1,32 @@
+{
+  "experiment": "VisA",
+  "protocol_id": "981a9e4a0101a7fd0ab9108a605ba5b109d9f7c5765f7fc5963b6385d2cf1d53",
+  "manifest_sha256": {
+    "originals.csv": "3984015035edb378e7f6b92deeaed673616ba8845aac58d24f550d5bc338a562",
+    "tiles.csv": "96216bec6c6c3a0097e200c16bf865cf9718517ac574f6460418db512c00d62e"
+  },
+  "weights_sha256": "89426d2d21482c568ae84c901a49a72cd7258c3c3d3b3315af55821843cb9d4a",
+  "seed": 42,
+  "train_sources": [
+    "VisA"
+  ],
+  "validation_sources": [
+    "VisA"
+  ],
+  "validation_originals": 663,
+  "train_tiles": {
+    "normal": 17616,
+    "defect": 828
+  },
+  "imbalance": "class_weight",
+  "inverse_frequency_weights": [
+    0.5235013623978202,
+    11.13768115942029
+  ],
+  "best_epoch": 13,
+  "best_validation_image_log_loss": 0.030366666174640292,
+  "checkpoint_rule": "minimum validation original-image log loss; first epoch on a tie",
+  "operating_threshold": 0.020964236930012703,
+  "device": "cuda",
+  "torch_version": "2.11.0+cu128"
+}

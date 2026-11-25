@@ -1,0 +1,29 @@
+{
+  "threshold": 0.020964236930012703,
+  "selected_on": "validation originals",
+  "policy": {
+    "min_recall": 0.9,
+    "max_fpr": 0.05
+  },
+  "targets_met": true,
+  "reason": "Both targets met. Maximize recall, then minimize FPR, then choose closest to 0.5.",
+  "validation": {
+    "n": 663,
+    "n_normal": 603,
+    "n_defect": 60,
+    "tn": 582,
+    "fp": 21,
+    "fn": 0,
+    "tp": 60,
+    "accuracy": 0.9683257918552036,
+    "precision": 0.7407407407407407,
+    "recall": 1.0,
+    "specificity": 0.9651741293532339,
+    "f1": 0.851063829787234,
+    "roc_auc": 0.9985627418463239,
+    "pr_auc": 0.9885267010984968,
+    "fpr": 0.03482587064676617,
+    "fnr": 0.0,
+    "undefined": ""
+  }
+}
