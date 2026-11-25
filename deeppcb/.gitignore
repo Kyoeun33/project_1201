@@ -22,3 +22,9 @@ __pycache__/
 *.pt
 *.pth
 *.onnx
+
+# Additional large model formats and generated experiment folders
+/src*/artifacts*/
+*.keras
+*.h5
+*.ckpt
