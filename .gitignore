@@ -9,3 +9,15 @@
 
 # Preserve the former nested repository metadata outside the uploaded source
 /.deeppcb-git-backup/
+
+# Large local environments and frontend dependencies
+/.venv/
+/venv/
+**/node_modules/
+
+# Additional large model formats and nested training artifacts
+/deeppcb/src*/artifacts*/
+*.keras
+*.h5
+*.ckpt
+*.onnx
